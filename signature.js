@@ -21,10 +21,7 @@ button.addEventListener('click', () => {
   const randomLine = lines[randomIndex];
 
   // Add the random line to the paragraph
-  paragraph.innerHTML += `<br>${randomLine}`;
-
-  // Add a newline character to separate the lines
-  paragraph.innerHTML += `<br>`; // Add this line to separate the lines
+  paragraph.textContent += `${randomLine}\n`; // Use textContent instead of innerHTML
 
   // Generate random RGB values
   const red = Math.floor(Math.random() * 255);
