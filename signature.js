@@ -1,16 +1,15 @@
-
-	// Get the button element
+// Get the button element
 const button = document.getElementById('myButton');
 
 // Get the paragraph element where the text will be added
 const paragraph = document.getElementById('myParagraph');
+const body = document.body;
 
 // Define the array of possible lines
-//past the folowing 
 const lines = [
   'Hello, World!',
   'add here',
-  
+  // Add more lines here...
 ];
 
 // Add an event listener to the button
@@ -23,13 +22,7 @@ button.addEventListener('click', () => {
 
   // Add the random line to the paragraph
   paragraph.innerHTML += `<br>${randomLine}`;
-});
-// Get the button and body elements
-const button = document.getElementById('myButton');
-const body = document.body;
 
-// Add an event listener to the button
-button.addEventListener('click', () => {
   // Generate random RGB values
   const red = Math.floor(Math.random() * 255);
   const green = Math.floor(Math.random() * 255);
